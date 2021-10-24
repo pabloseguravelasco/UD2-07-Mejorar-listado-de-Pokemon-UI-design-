@@ -1,0 +1,12 @@
+
+
+<mat-card *ngFor="let pokemon of pokemonList; let i = index" >
+    <mat-card-title-group>
+      <mat-card-title>{{pokemon.name}}</mat-card-title>
+      <mat-card-subtitle>#0{{i + 1}}</mat-card-subtitle>
+      <img [src] = "getPokemonPhotoUrl(pokemon.url)" width="200px">
+    </mat-card-title-group>
+    <mat-card-content>
+        Este pokemon es demasiado fuerte, no voy a poder derrotarlo
+    </mat-card-content>
+  </mat-card>
